@@ -31,5 +31,6 @@ function signIn(user, pass) {
 }
 
 console.log('Motlo');
+console.log('hehe');
 
 signIn(userNameprompt, passprompt);
