@@ -10,6 +10,7 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 
+
 function inputLength() {
     return input.value.length;
 }
@@ -19,11 +20,12 @@ function createListElement() {
     div.classList.add("wrap");
     var li = document.createElement("li");
     var del = document.createElement("button");
+    del.innerHTML= "Remove";
+    del.classList.add("remove");
     ul.appendChild(div);
     div.append(li, del);
     li.appendChild(document.createTextNode(input.value));
     input.value="";
-    del.innerHTML= "Delete";
 }
 
 function addListAfterClick() {
@@ -38,10 +40,12 @@ function addListAfterKeypress(event) {
     }
 }
 
-function del() {
-    
+function deleteTask(element) {
+    if (element.target.className === "remove"){
+		element.target.parentElement.remove();
+	}
 }
 
 button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
-
+ul.addEventListener("click", deleteTask);
