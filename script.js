@@ -23,7 +23,7 @@ function createListElement() {
     div.append(li, del);
     li.appendChild(document.createTextNode(input.value));
     input.value="";
-    del.innerHTML= "Del";
+    del.innerHTML= "Delete";
 }
 
 function addListAfterClick() {
