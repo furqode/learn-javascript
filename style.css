@@ -1,8 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container {
+    max-width: 60%;
+    margin: auto;
+    background-color: rgb(199, 191, 191);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column  ;
+}
+.sub-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.sub-content p {
+    padding-bottom: 5px;
+}
 .wrap li {
     display: inline-block;
     padding: 10px;
-    text-
-}
-.wrap {
-   
+    text-transform: capitalize;
 }
