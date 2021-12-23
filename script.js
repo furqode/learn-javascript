@@ -19,12 +19,11 @@ function createListElement() {
     div.classList.add("wrap");
     var li = document.createElement("li");
     var del = document.createElement("button");
-    div.append(li, del);
     ul.appendChild(div);
-        li.appendChild(document.createTextNode(input.value));
-        ul.appendChild(li);
-        input.value="";
-        del.innerHTML= "Del";
+    div.append(li, del);
+    li.appendChild(document.createTextNode(input.value));
+    input.value="";
+    del.innerHTML= "Del";
 }
 
 function addListAfterClick() {
