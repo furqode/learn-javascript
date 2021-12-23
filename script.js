@@ -15,10 +15,16 @@ function inputLength() {
 }
 
 function createListElement() {
+    var div = document.createElement("div");
+    div.classList.add("wrap");
     var li = document.createElement("li");
+    var del = document.createElement("button");
+    div.append(li, del);
+    ul.appendChild(div);
         li.appendChild(document.createTextNode(input.value));
         ul.appendChild(li);
         input.value="";
+        del.innerHTML= "Del";
 }
 
 function addListAfterClick() {
