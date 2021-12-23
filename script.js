@@ -38,6 +38,10 @@ function addListAfterKeypress(event) {
     }
 }
 
+function del() {
+    
+}
+
 button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
 
