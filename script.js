@@ -107,3 +107,28 @@ let p1Level = false;
      console.log("inside", p1Level);
  }
  console.log("outside", p1Level);
+
+//  You can change the properties of the constant object but can't reassign it
+
+// Destructuring
+
+const obj = {
+    wizard: 'boby',
+    experience: 60,
+    wizardlvl: true
+}
+
+// const player = obj.wizard;
+const xp = obj.experience;
+let wizardlvl =  obj.wizardlvl;
+
+const {wizard2, experice} = obj;
+
+
+
+
+
+
+
+
+
