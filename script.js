@@ -145,6 +145,21 @@ function greet(name='', age=30, pet='cat') {
     return `Hey ${name}, hope you're having a good day. Nice ${pet} you have there. Your age is ${age}`;
 }
 
+// arrow function
+function add(a, b) {
+    return a+b;
+}
+const add2 = (a,b) => a + b;
+
+
+
+
+
+
+
+
+
+
 
 
 
