@@ -63,7 +63,7 @@ function experiencePoints() {
     }
 }
 
-var experiencePoints = winBattle() ? 10 : 1;
+// var experiencePoints = winBattle() ? 10 : 1; commenting this out cuz it was breaking the code
 
 // Switch Case
 
@@ -91,3 +91,19 @@ function moveCommand(direction) {
     }
     return whatHappens;
 }
+
+// Learned About Let and Const in ES6
+//  use const when the varibale is not going to change
+//  and use let when you're going to use a variable that's going to change.
+
+
+const wizard = 'bobby';
+console.log(wizard);
+let experience = 100;
+let p1Level = false;
+// using let in a if statement creates a new scope which is why the variable wizardLevel won't change
+ if (experience > 90 ) {
+     let p1Level = true;
+     console.log("inside", p1Level);
+ }
+ console.log("outside", p1Level);
