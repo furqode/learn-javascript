@@ -49,3 +49,19 @@ function deleteTask(element) {
 button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
 ul.addEventListener("click", deleteTask);
+
+
+// Ternary Operators
+
+function experiencePoints() {
+    if (winBattle()) {
+        return 10;
+    } else {
+        return 1;
+    }
+}
+
+var experiencePoints = winBattle() ? 10 : 1;
+
+// Switch Case
+
