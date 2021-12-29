@@ -124,6 +124,21 @@ let wizardlvl =  obj.wizardlvl;
 
 const {wizard2, experice} = obj;
 
+// Object Properties
+
+const name= "John Wick";
+const deets = {
+    [name]: "Hello"
+}
+
+// Template strings
+
+const woman = "sally";
+const age = 24;
+const pet = "horse";
+
+const greetings = `Hey ${woman}, hope you're having a good day. Nice ${pet} you have there.`;
+console.log(greetings);
 
 
 
