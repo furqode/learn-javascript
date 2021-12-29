@@ -133,13 +133,17 @@ const deets = {
 
 // Template strings
 
-const woman = "sally";
-const age = 24;
-const pet = "horse";
+// const woman = "sally";
+// const age = 24;
+// const pet = "horse";
 
-const greetings = `Hey ${woman}, hope you're having a good day. Nice ${pet} you have there.`;
-console.log(greetings);
+// const greetings = `Hey ${woman}, hope you're having a good day. Nice ${pet} you have there.`;
+// console.log(greetings);
 
+// default arguments
+function greet(name='', age=30, pet='cat') {
+    return `Hey ${name}, hope you're having a good day. Nice ${pet} you have there. Your age is ${age}`;
+}
 
 
 
